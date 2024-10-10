@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Absensi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Itim&family=Jaldi&family=Jomhuria&family=Timmana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid justify-content-center">
+                <h1>Absensi Mahasiswa</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row flex-nowrap content">
+                <div class="sidebar col-auto col-md-3 col-xl-2">
+                    <div class="d-flex flex-column align-items-center text-white">
+                        <div class="username">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+                                <img src="../images/usr.png" alt="hugenerd" width="50" height="50" class="rounded-circle">
+                                <ul style="list-style: none;">
+                                    <li><a href="#"><h5>Username</h5></a></li>
+                                    <li><a href="#"><h6>Position</h6></a></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li>
+                                <a id="back" href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <img src="../images/bck.png" alt="" width="20" height="20"> <span class="ms-1 d-none d-sm-inline">BACK</span> </a>
+                            </li>
+                            <li>
+                                <a id="dashboard" href="../dashboard/dashboard.html" class="nav-link px-0 align-middle">
+                                    <img src="../images/db.png" alt="" width="20" height="20"> <span class="ms-1 d-none d-sm-inline">DASHBOARD</span></a>
+                            </li>
+                            <li>
+                                <a id="entryData" href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <img src="../images/ed.png" alt="" width="20" height="20"> <span class="ms-1 d-none d-sm-inline">DATA ENTRY</span></a>
+        
+                            </li>
+                            <li>
+                                <a id="absensi" href="../absensi/absensi.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <img src="../images/abs.png" alt=""width="24" height="20"> <span class="ms-1 d-none d-sm-inline">ABSENSI</span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col py-3">
+                    <div class="container">
+                        <div class="Top-absensi row align-items-start">
+                            <div class="absensi">
+                                <h2>
+                                    <a href="">ENTRY DATA</a>
+                                </h2>
+                            </div>
+                            <form action="" method="post" action="">
+                                <table class="TableList" cellpadding="10" cellspacing="0" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <label for="">Semester</label>
+                                            </td>
+                                            
+                                            <td>
+                                                <label class="Semester" for="">
+                                                    <select name="semester" id="">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                            
+                                            <td>
+                                                <label for="">Class</label>
+                                            </td>
+                                            
+                                            <td>
+                                                <label for="">
+                                                    <select name="kelas" id="">
+                                                        <option value="A">A1</option>
+                                                        <option value="B">A2</option>
+                                                        <option value="C">B</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                            
+
+                                            <td>
+                                                <label for="">Courses</label>
+                                            </td>
+                                            
+                                            <td>
+                                                <label for="">
+                                                    <select name="matkul" id="">
+                                                        <option value="FisTek">Fisika Teknik</option>
+                                                        <option value="MatTek1">Matematika Teknik 1</option>
+                                                        <option value="DasPro">Dasar Pemrograman</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        
+                                            <td>
+                                                <label for="">
+                                                    <select name="show" id="" style="width: 50px;">
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+
+                        <div class="Bottom-absensi row">
+                            <div class="formInput">
+                                <form action="" method="post">
+                                    <div class="name" style="background-color: #EBEBEB; position: relative; width: 100%;">
+                                        <label for="nameControl">NAME</label>
+                                        <input type="text" name="" id="nameControl">
+                                    </div>
+                                    <div class="npm">
+                                        <label for="npmControl">NPM</label>
+                                        <input type="text" name="" id="npmControl">
+                                    </div>
+                                    <div class="jenisKelamin" style="background-color: #EBEBEB;">
+                                        <label for="jkControl">JENIS KELAMIN</label>
+                                        <input type="text" name="" id="jkControl">
+                                    </div>
+                                    <div class="domisili">
+                                        <label for="domisiliControl">DOMISILI</label>
+                                        <input type="text" name="" id="domisiliControl">
+                                    </div>
+                                    <div class="tanggalLahir" style="background-color: #EBEBEB;">
+                                        <label for="tlControl">TANGGAL LAHIR</label>
+                                        <input type="text" name="" id="tlControl">
+                                    </div>
+                                    <div class="button">
+                                        <button type="submit" class="btn">save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright 2021. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
